@@ -32,9 +32,9 @@ export default function Nav(){
             showLabels
             value={paths.indexOf(pathname)}
         >
-            <BottomNavigationLink label="My Work" icon={<WorkIcon />} to="/my-work"/>
-            <BottomNavigationLink label="Queue" icon={<ListIcon />} to="/"/>
-            <BottomNavigationLink label="In Progress" icon={<AccessTimeIcon />} to="/in-progress"/>
+            <BottomNavigationLink label="My Work" icon={<WorkIcon />} to="my-work"/>
+            <BottomNavigationLink label="Queue" icon={<ListIcon />} to="./"/>
+            <BottomNavigationLink label="In Progress" icon={<AccessTimeIcon />} to="in-progress"/>
         </BottomNavigation>
     </Paper>)
 }

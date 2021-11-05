@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import CurrentWork from "../routes/currentWork";
 import InProgress from "../routes/inProgress";
 import Queue from "../routes/queue";
@@ -7,7 +7,7 @@ import Nav from "../footer/Navigation";
 
 export default function Router(){
     return (
-    <BrowserRouter>
+    <HashRouter>
         <Menu/>
         <Routes>
             <Route exact path="/" element={<Queue />} />
@@ -15,6 +15,6 @@ export default function Router(){
             <Route exact path="my-work" element={<CurrentWork />} />
         </Routes>
         <Nav/>
-    </BrowserRouter>
+    </HashRouter>
     )
 }
