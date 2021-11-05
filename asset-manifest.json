@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/tutor-center-front-end/static/css/main.f0562563.chunk.css",
-    "main.js": "/tutor-center-front-end/static/js/main.66529af2.chunk.js",
-    "main.js.map": "/tutor-center-front-end/static/js/main.66529af2.chunk.js.map",
+    "main.js": "/tutor-center-front-end/static/js/main.a6c243b3.chunk.js",
+    "main.js.map": "/tutor-center-front-end/static/js/main.a6c243b3.chunk.js.map",
     "runtime-main.js": "/tutor-center-front-end/static/js/runtime-main.8511f14a.js",
     "runtime-main.js.map": "/tutor-center-front-end/static/js/runtime-main.8511f14a.js.map",
-    "static/js/2.51eb4278.chunk.js": "/tutor-center-front-end/static/js/2.51eb4278.chunk.js",
-    "static/js/2.51eb4278.chunk.js.map": "/tutor-center-front-end/static/js/2.51eb4278.chunk.js.map",
+    "static/js/2.17b740d2.chunk.js": "/tutor-center-front-end/static/js/2.17b740d2.chunk.js",
+    "static/js/2.17b740d2.chunk.js.map": "/tutor-center-front-end/static/js/2.17b740d2.chunk.js.map",
     "static/js/3.56e62bf9.chunk.js": "/tutor-center-front-end/static/js/3.56e62bf9.chunk.js",
     "static/js/3.56e62bf9.chunk.js.map": "/tutor-center-front-end/static/js/3.56e62bf9.chunk.js.map",
     "index.html": "/tutor-center-front-end/index.html",
     "static/css/main.f0562563.chunk.css.map": "/tutor-center-front-end/static/css/main.f0562563.chunk.css.map",
-    "static/js/2.51eb4278.chunk.js.LICENSE.txt": "/tutor-center-front-end/static/js/2.51eb4278.chunk.js.LICENSE.txt"
+    "static/js/2.17b740d2.chunk.js.LICENSE.txt": "/tutor-center-front-end/static/js/2.17b740d2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8511f14a.js",
-    "static/js/2.51eb4278.chunk.js",
+    "static/js/2.17b740d2.chunk.js",
     "static/css/main.f0562563.chunk.css",
-    "static/js/main.66529af2.chunk.js"
+    "static/js/main.a6c243b3.chunk.js"
   ]
 }
