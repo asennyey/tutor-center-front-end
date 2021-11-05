@@ -5,10 +5,7 @@ export default function Deck({items, options}){
     return (
         <div className="deck">
         {items.map(e=><QueueItem 
-                name={e.name} 
-                date={e.date} 
-                className={e.class} 
-                topic={e.topic} 
+                {...e}
                 options={options}
             />)}
         </div>

@@ -48,12 +48,12 @@ export default function AuthProvider(props){
         discoveryDocs: DISCOVERY_DOCS,
         scope: SCOPES
         }).then(() => {
-        // Listen for sign-in state changes.
-        window.gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
+            // Listen for sign-in state changes.
+            window.gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
 
-        // Handle the initial sign-in state.
-        updateSigninStatus(window.gapi.auth2.getAuthInstance().isSignedIn.get());
-        setLoading(false);
+            // Handle the initial sign-in state.
+            updateSigninStatus(window.gapi.auth2.getAuthInstance().isSignedIn.get());
+            setLoading(false);
         });
     }
 
@@ -62,6 +62,7 @@ export default function AuthProvider(props){
      *  appropriately. After a sign-in, the API is called.
      */
     function updateSigninStatus(isSignedIn) {
+        console.log(isSignedIn)
         if(isSignedIn){
             var auth2 = window.gapi.auth2.getAuthInstance();
             var profile = auth2.currentUser.get().getBasicProfile()
@@ -73,14 +74,17 @@ export default function AuthProvider(props){
   
   
     useEffect(() => {
-        //window.gapi is available at this point
-        window.onGoogleScriptLoad = () => {
+        if(window.gapi){
             window.gapi.load('client:auth2', initClient);
+        }else{
+            //window.gapi is available at this point
+            window.onGoogleScriptLoad = () => {
+                window.gapi.load('client:auth2', initClient);
+            }
+            
+            //ensure everything is set before loading the script
+            loadGoogleScript();
         }
-        
-        //ensure everything is set before loading the script
-        loadGoogleScript();
-        
     }, []);
 
     /**
@@ -105,7 +109,7 @@ export default function AuthProvider(props){
     // because this is the top-most component rendered in our app and it will very
     // rarely re-render/cause a performance problem.
     return (
-        <AuthContext.Provider value={{user, logout: ()=>setUser(null)}} {...props} />
+        <AuthContext.Provider value={{user, logout: ()=>window.gapi.auth2.getAuthInstance().signOut()}} {...props} />
     )
 }
 

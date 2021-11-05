@@ -2,6 +2,7 @@ import { createTheme, CssBaseline, ThemeProvider, useMediaQuery } from "@mui/mat
 import { useMemo } from "react";
 import AuthProvider from "./auth";
 import DataProvider from "./data";
+import Router from "./route";
 import UserProvider from "./user";
 
 export default function AppProviders({children}){
@@ -22,7 +23,9 @@ export default function AppProviders({children}){
             <AuthProvider>
                 <DataProvider>
                     <UserProvider>
-                        {children}
+                        <Router>
+                            {children}
+                        </Router>
                     </UserProvider>
                 </DataProvider>
             </AuthProvider>

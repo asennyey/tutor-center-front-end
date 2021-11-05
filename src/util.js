@@ -7,8 +7,9 @@ export function within(date, hours){
 }
 
 export function parseSpreadsheet(response){
-    return response.map(e=>{
+    return response.map((e, i)=>{
         return {
+            row: i,
             date: toCommonDate(e[0]),
             fullName: e[1],
             email: e[2],
