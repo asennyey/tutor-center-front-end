@@ -1,4 +1,4 @@
-import Deck from '../Deck/deck'
+import Deck from '../shared/Deck/deck'
 import { useData } from '../providers/data'
 
 export default function Queue(){
@@ -9,7 +9,8 @@ export default function Queue(){
                 title: e.fullName,
                 subtitle: e.date.toFormat("h:mm a"),
                 contentTitle: e.className,
-                contentText: e.topic
+                contentText: e.topic,
+                row: e.row
             }
         })}  options={{assignToMe: true}}/>
     )

@@ -2,9 +2,9 @@ import {Card, CardHeader, CardContent, Typography, CardActions, IconButton} from
 import DoneIcon from '@mui/icons-material/Done';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import PersonRemoveIcon from '@mui/icons-material/PersonRemove'
-import { environment } from '../environment';
-import { useUser } from '../providers/user';
-import { useData } from '../providers/data';
+import { environment } from '../../environment';
+import { useUser } from '../../providers/user';
+import { useData } from '../../providers/data';
 import { useState } from 'react';
 export default function QueueItem({title, subtitle, contentTitle, contentText, options, row}){
     const user = useUser();

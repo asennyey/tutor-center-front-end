@@ -1,4 +1,4 @@
-import QueueItem from '../Card/Card'
+import QueueItem from '../shared/Card/Card'
 
 export default function CurrentWork({item}){
     return item?(<QueueItem 

@@ -1,4 +1,4 @@
-import Deck from '../Deck/deck';
+import Deck from '../shared/Deck/deck';
 import {useData} from '../providers/data'
 
 export default function InProgress(){
@@ -10,7 +10,8 @@ export default function InProgress(){
                     title: e.tutor,
                     subtitle: e.fullName,
                     contentTitle: e.className,
-                    contentText: e.topic
+                    contentText: e.topic,
+                    row: e.row
                 }
             })} 
             options={{unassign: true, assignToMe:true, markComplete: true}}

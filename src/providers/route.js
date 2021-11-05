@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import CurrentWork from "../currentWork/currentWork";
-import InProgress from "../inProgress/inProgress";
-import Queue from "../queue/queue";
-import Menu from '../Header/Menu'
-import Nav from "../Footer/Navigation";
+import CurrentWork from "../routes/currentWork";
+import InProgress from "../routes/inProgress";
+import Queue from "../routes/queue";
+import Menu from '../header/Menu'
+import Nav from "../footer/Navigation";
 
-export default function Router({...children}){
+export default function Router(){
     return (
     <BrowserRouter>
         <Menu/>
