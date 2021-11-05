@@ -7,8 +7,8 @@ export default function InProgress(){
         <Deck 
             items={itemsInProgress.map(e=>{
                 return {
-                    title: e.tutor,
-                    subtitle: e.fullName,
+                    title: e.fullName,
+                    subtitle: e.tutor,
                     contentTitle: e.className,
                     contentText: e.topic,
                     row: e.row

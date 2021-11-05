@@ -60,7 +60,7 @@ export default function QueueItem({title, subtitle, contentTitle, contentText, o
     }
 
     return (
-        <Card sx={{ width: '45%', margin: 1, minWidth: 300 }}>
+        <Card sx={{ width: 350, margin: 1, minWidth: 300 }}>
             <CardHeader
                 title={title}
                 subheader={subtitle}
